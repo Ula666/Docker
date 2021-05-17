@@ -10,6 +10,12 @@
 - load balancing
 - auto scaling
 
+### What is containerization?
+- Containerization allows developers to create and deploy applications faster and more securely.
+-  It involves encapsulating or packaging up software code and all its dependencies so that it can run uniformly and consistently on any infrastructure. 
+
+### What is Kubernetes?
+- Kubernetes — also known as “k8s” or “kube” — is a container orchestration platform for scheduling and automating the deployment, management, and scaling of containerized applications.
 
 ### Why use containers?
 - Containers offer all the benefits of VMs, including application isolation, cost-effective scalability, and disposability. But the additional layer of abstraction (at the OS level) offers important additional advantages:
