@@ -18,6 +18,11 @@
 
 ### What is Kubernetes?
 - Kubernetes — also known as “k8s” or “kube” — is a container orchestration platform for scheduling and automating the deployment, management, and scaling of containerized applications.
+- Benefits:
+- **Multi-cloud capability**-can host workloads running on a single cloud as well as workloads that are spread across multiple clouds, and can easily scale its environment from one cloud to another.
+- **Self-monitoring**-Kubernetes checks constantly the health of nodes and containers
+- **Automates various manual processes**-for instance, Kubernetes will control for you which server will host the container, how it will be launched etc
+- **Interacts with several groups of containers**-Kubernetes is able to manage more cluster at the same time
 
 ### Microservices
 - Microservices are a popular software design architecture that breaks apart monolithic systems. Applications are built as collections of loosely coupled services. Each microservice is responsible for a single feature. They interact with each other through communication protocols such as HTTP and TCP.
@@ -42,10 +47,16 @@
 ### Docker images
 - Docker images contain executable application source code as well as all the tools, libraries, and dependencies that the application code needs to run as a container. When you run the Docker image, it becomes one instance (or multiple instances) of the container.
 
-### container lifecycle:
+### Docker Container:
+- A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another. 
 
-- run
-- rm
+### Docker instalation:
+- Download the installer from official docker website and run it (you'll have to restart you pc after this step)
+- Open git bash as admin
+- use command `docker --version` to check if docker is installed 
+- run a tes command to see if docker is working properly: `docker run hello-world` 
+
+
 
 ### commands:
 - `docker --version`
