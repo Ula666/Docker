@@ -42,4 +42,30 @@
 ### Docker images
 - Docker images contain executable application source code as well as all the tools, libraries, and dependencies that the application code needs to run as a container. When you run the Docker image, it becomes one instance (or multiple instances) of the container.
 
+### container lifecycle:
+
+- run
+- rm
+
+### commands:
+- `docker --version`
+- `docker run hello-world` to run the docker image/ download if its not there
+- `docker rmi hello-world -f` to delete the image (f to force delete it)
+- `docker rm 099ab08595a0 -f ` to delete container using container id
+- `docker images` to check what images we have
+- `docker pull hello-world` to check the image, see if we have it/it exist and not run it yet
+- `docker ps -a` to check running containers
+- `docker run -d -p 2368:2368 ghost` to create a container
+- `http://localhost:2368/` copy that to a web browser and check if its running
+- `docker run -d -p 88:80 nginx`
+- `docker exec -it 2989b796a287 sh` to go inisde the shelll inside container
+- `cd usr ` , `cd share`, `cd nginx`, `cd html`, `ls` to edit our html file
+- `nano index.html`
+- `docker cp index.html 2989b796a287:/usr/share/nginx/html` to copy index.html file to container and change old index.html
+- `docker commit 2989b796a287 rrose666/eng84:latest`
+- `docker push rrose666/eng84`
+
+
+
+
 
