@@ -6,7 +6,7 @@
 - Docker is an open source platform for building, deploying, and managing containerized applications.
 
 ### Advantages:
-- self-healing
+- self-healing (checks if the containers are "healthy", if not it destroys them and create a new one. 
 - load balancing
 - auto scaling
 
