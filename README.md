@@ -17,6 +17,16 @@
 ### What is Kubernetes?
 - Kubernetes — also known as “k8s” or “kube” — is a container orchestration platform for scheduling and automating the deployment, management, and scaling of containerized applications.
 
+### Microservices
+- Microservices are a popular software design architecture that breaks apart monolithic systems. Applications are built as collections of loosely coupled services. Each microservice is responsible for a single feature. They interact with each other through communication protocols such as HTTP and TCP.
+- prinicples of microservices: 
+- Service abstraction (services hide their internal logic)
+- Service reusability (service structure is planned according to the DRY principle)
+- Service autonomy (services internally control their own logic)
+- Service composability (services can be used together)
+- ![image](https://user-images.githubusercontent.com/47173937/118474384-e97c7f00-b702-11eb-8331-e4124d4673e3.png)
+
+
 ### Why use containers?
 - Containers offer all the benefits of VMs, including application isolation, cost-effective scalability, and disposability. But the additional layer of abstraction (at the OS level) offers important additional advantages:
 - **Lighter weight:** Unlike VMs, containers don’t carry the payload of an entire OS instance—they include only the OS processes and dependencies necessary to execute the code.
