@@ -73,7 +73,10 @@
 - `cd usr ` , `cd share`, `cd nginx`, `cd html`, `ls` to edit our html file
 - `nano index.html`
 - `docker cp index.html 2989b796a287:/usr/share/nginx/html` to copy index.html file to container and change old index.html
-- `docker commit 2989b796a287 rrose666/eng84:latest`
+- to create a image:
+- `docker commit <container_id_or_name> <username_on_dockerhub>/<repo_name>:<tag>`
+- example: `docker commit 2989b796a287 rrose666/eng84:latest`
+- then to push: `docker push <repo_name>`
 - `docker push rrose666/eng84`
 
 
