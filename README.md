@@ -13,6 +13,8 @@
 ### What is containerization?
 - Containerization allows developers to create and deploy applications faster and more securely.
 -  It involves encapsulating or packaging up software code and all its dependencies so that it can run uniformly and consistently on any infrastructure. 
+-  ![image](https://user-images.githubusercontent.com/47173937/118474817-64de3080-b703-11eb-94d6-fe07aaf500ec.png)
+
 
 ### What is Kubernetes?
 - Kubernetes — also known as “k8s” or “kube” — is a container orchestration platform for scheduling and automating the deployment, management, and scaling of containerized applications.
