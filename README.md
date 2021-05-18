@@ -79,7 +79,28 @@
 - then to push: `docker push <repo_name>`
 - `docker push rrose666/eng84`
 
+### Automate the build steps of our nginx customized image by using Dockerfile with set of instructions
+- Naming convention to create Dockerfile is `Dockerfile` 
+- `docker build -t rrose666/eng84` to build
+- `docker run -d -p 8-:80 rrose666/eng84`  add ports to this 
+- `docker run -d -p 4000:4000 docs/docker.github.io` command to download and access the oficial documentation, make it locally available on port 4000
 
+```Dockerfile
+FROM nginx
+# here we using nginx official as our base image
+
+LABEL MAINTAINER = ula@spartaglobal.com
+# using label is a good practice, but optional
+
+COPY app1 /usr/share/nginx/html
+# copying our app1 folder from our OS to default index.html location
+
+EXPOSE 80
+# EXPOSE is the keyword to use to expose the required port for the base image
+
+CMD ["nginx", "-g", "daemon off;"]
+# CMD will execute the command in this case as this is taken from the official image
+```
 
 
 
